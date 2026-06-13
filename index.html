@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blockforge — Visual Site Builder</title>
-<link rel="stylesheet" href="blockforge.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -25,20 +25,12 @@
   <aside id="palette-wrap" aria-label="Block palette">
     <input id="pal-search" type="text" placeholder="Search 40 blocks…">
     <div class="pal-hint">click to add · or drag into place</div>
+    <div id="pal-cat-nav"></div>
     <div id="palette"></div>
   </aside>
 
   <section id="workspace-wrap">
     <div class="panel-head">Page stack</div>
-
-    <!-- Block Navigator -->
-    <div id="block-nav" aria-label="Block navigator">
-      <button class="nav-btn" id="nav-prev" title="Previous block (Alt+↑)" disabled>↑</button>
-      <button class="nav-btn" id="nav-next" title="Next block (Alt+↓)" disabled>↓</button>
-      <span id="block-nav-label">No blocks yet</span>
-      <span id="block-nav-count">—</span>
-    </div>
-
     <div id="workspace" aria-label="Workspace"></div>
   </section>
 
@@ -94,6 +86,6 @@
 
 <div id="toast">Saved</div>
 
-<script src="blockforge.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
